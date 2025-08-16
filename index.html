@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/01297313f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logoo.png" class="logo" alt="Logo">
+                <ul id="sidemenu" class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE ENGINEER</p>
+                <h1>Hi, I'm <span>Elton</span> Dannies Sabu </h1>
+                <p>B.Tech CSE student </p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.png" alt="my image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="sub-title">About Me</h1>
+                    <p>I'm a B.Tech CSE student with a passion for software development and problem-solving. I enjoy working on projects that challenge my skills and allow me to learn new technologies.</p>
+                    <div class="tab-title">
+                        <p class ="tab_links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class ="tab_links" onclick="opentab('Projects')"> Projects  </p>
+                        <p class ="tab_links" onclick="opentab('Education')"> Education </p> 
+                    </div>
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            <li><span>Programing languages</span><br>C, Java ,python ,javascript ,html ,css</li>
+                            <li><span>web developmet</span><br></li>
+                            <li><span>Data Base</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>safe pass mini project</span><br></li>
+                            <li><span>chess game</span><br></li>
+                            <li><span>audio book</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Btech in computer science and engineering</span><br></li>
+                            <li><span>Developer</span><br></li>
+                            <li><span>Developer</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class ="sub-title">my projects </h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>safe pass</h2>
+                    <p>  lkjsdf</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>chess game</h2>
+                    <p>  lkjsdf</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>audio book</h2>
+                    <p>  lkjsdf</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certificates">
+        <div class="container">
+            <h1 class ="sub-title">Certificates</h1>
+            <div class="certificates-list">
+                <div class="certificate">
+                    <img src="certificate1.png" alt="Certificate 1">
+                    <div class="layer">
+                        <h3>name of certificate</h3>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="certificate1.png" alt="Certificate 1">
+                    <div class="layer">
+                        <h3>name of certificate</h3>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="certificate1.png" alt="Certificate 1">
+                    <div class="layer">
+                        <h3>name of certificate</h3>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class ="btn">see more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class ="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>eltondanniessabu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8139828213</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="resum.pdf" download class ="btn btn2">download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name ="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Elton Dannies Sabu </p>
+        </div>
+    </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab_links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyHvavn0jL2sC1YclzajTqjEAEK88X3OHnLWDRUUtYTOhj4UFrtujJsqa4I0LtKhkzn/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+        </script>
+</body>
+</html>
