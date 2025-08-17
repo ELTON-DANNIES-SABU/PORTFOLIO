@@ -397,3 +397,9 @@ nav .fa-solid{
    margin-top: -40px;
    display: block;
 }
+.hiden-certificate{
+    display: none;
+}
+.certificate i{
+   color: #fd5800;
+}
